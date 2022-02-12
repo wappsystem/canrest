@@ -1022,16 +1022,13 @@
             var current_I = 1;
             //---------------------------------------
             m.before_submit = function (data, index) {
-                //PHQ9-------------------
-                data.PHQ9 = scores.PHQ9;
-                //PHQ9-------------------
                 //ISI-------------------
                 data.ISI = scores.ISI;
                 data.ISI_1 = scores.ISI_1;
                 //ISI-------------------
-                //SB-------------------
-                data.SB = scores.SB;
-                //SB-------------------
+                //MAP-------------------
+                data.MAP = scores.MAP;
+                //MAP-------------------
                 //-------------------------------------
                 return true;
             }
