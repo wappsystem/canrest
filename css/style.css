@@ -255,7 +255,7 @@
     font-size: 10px;
 }
 #D__ID .main {
-    color: #1c2350;
+    color: #1b6d5f;
     font-family: Asap, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -433,7 +433,7 @@ textarea {
     left: 0;
 }
 #D__ID .header-dark {
-    background-color: #1c2350;
+    background-color: #1b6d5f;
     color: #fff;
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -509,7 +509,7 @@ textarea {
     margin-bottom: 22px;
     display: inline-block;
     vertical-align: top;
-    color: #1c2350;
+    color: #1b6d5f;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -546,7 +546,7 @@ textarea {
     margin-bottom: 2px;
     display: block;
     font-size: 30px;
-    color: #1c2350;
+    color: #1b6d5f;
     font-weight: 500;
 }
 #D__ID .heading-block {
@@ -645,7 +645,7 @@ textarea {
 #D__ID .footer {
     padding: 58px 0;
     color: #fff;
-    background-color: #1c2350;
+    background-color: #1b6d5f;
     /*background-image: url(../images/bg-04.png);*/
     background-repeat: no-repeat;
     background-position: 93% bottom;
@@ -866,7 +866,7 @@ textarea {
     padding: 50px 15px;
     border-radius: 22px;
     color: #fff;
-    background-color: #1c2350;
+    background-color: #1b6d5f;
     background-repeat: no-repeat;
     background-position: 100% 100%;
 }
@@ -932,7 +932,7 @@ textarea {
     position: relative;
     display: flex;
     align-items: center;
-    background-color: #1c2350;
+    background-color: #1b6d5f;
     color: #fff;
     border-radius: 3px;
     font-size: 18px;
@@ -1025,7 +1025,7 @@ textarea {
 #D__ID .accordion-slide h1,
 #D__ID .accordion-slide h2,
 #D__ID .accordion-slide h3 {
-    color: #1c2350;
+    color: #1b6d5f;
 }
 #D__ID .accordion-slide p {
     line-height: 1.38;
@@ -1057,7 +1057,7 @@ textarea {
     margin: 0 auto 67px;
 }
 #D__ID .video-block.blue-dark {
-    background-color: #1c2350;
+    background-color: #1b6d5f;
 }
 #D__ID .video-holder {
     position: relative;
@@ -1186,7 +1186,7 @@ textarea {
 #D__ID .box strong {
     display: block;
     font-weight: 600;
-    color: #1c2350;
+    color: #1b6d5f;
 }
 #D__ID .box h2 {
     margin-bottom: 16px;

@@ -449,9 +449,12 @@
                     <div class="form-name box">
                         <div class="questiongroup ">
                             <fieldset class="">
-                                <h3>The next 4 questions assess the symptom frequency index for Obstructive Sleep Apnoea symptoms.<br>
-                                <i>During the last month, on how many nights or days per week have you had or been told you had the following?</i><br>
-                                Please select only one answer per symptom.</h3>
+                                <h3>The next 4 questions assess the symptom frequency index for Obstructive Sleep Apnoea
+                                    symptoms.<br>
+                                    <i>During the last month, on how many nights or days per week have you had or been
+                                        told you had the following?</i><br>
+                                    Please select only one answer per symptom.
+                                </h3>
                             </fieldset>
                         </div>
                     </div>
@@ -462,10 +465,10 @@
                             </div>
                         </div>
 
-                            <div class="questiongroup">
+                        <div class="questiongroup">
                             <fieldset class="">
                                 <label class="radiobuttons" title="Never">
-                                    <input type="radio" name="MAP_1" value="0" required >
+                                    <input type="radio" name="MAP_1" value="0" required>
                                     <span class="checkmark no-dot">0</span>Never</label><br>
                                 <label class="radiobuttons" title="Rarely (less than once a week)">
                                     <input type="radio" name="MAP_1" value="1">
@@ -484,13 +487,13 @@
                                     <span class="checkmark no-dot">DK</span>Don’t Know</label><br>
                             </fieldset>
                         </div>
-                        </div>
+                    </div>
                     <div class="form-name box">
                         <h3>2. Loud snoring</h3>
                         <div class="questiongroup">
                             <fieldset>
                                 <label class="radiobuttons" title="Never">
-                                    <input type="radio" name="MAP_2" value="0" required >
+                                    <input type="radio" name="MAP_2" value="0" required>
                                     <span class="checkmark no-dot">0</span>Never</label><br>
                                 <label class="radiobuttons" title="Rarely (less than once a week)">
                                     <input type="radio" name="MAP_2" value="1">
@@ -515,7 +518,7 @@
                         <div class="questiongroup">
                             <fieldset>
                                 <label class="radiobuttons" title="Never">
-                                    <input type="radio" name="MAP_3" value="0" required >
+                                    <input type="radio" name="MAP_3" value="0" required>
                                     <span class="checkmark no-dot">0</span>Never</label><br>
                                 <label class="radiobuttons" title="Rarely (less than once a week)">
                                     <input type="radio" name="MAP_3" value="1">
@@ -540,28 +543,45 @@
                         <h3>4. What is your</h3>
                         <div class="questiongroup">
                             <fieldset class="subquestions">
-                                <label ><span class="">Age (years)</span>
-                                    <input class="form-control" type="number" min=0 max=110 name="age" placeholder="" required >
+                                <label><span class="">Age (years)</span>
+                                    <input class="form-control" type="number" min=0 max=110 name="mapi_age" placeholder=""
+                                        required>
                                 </label><br>
-                                <label ><span class="">Weight (kg)</span>
-                                    <input class="form-control" type="number" min=30 max=250 name="weight" id=weight__ID placeholder="" required >
+                                <label><span class="">Weight (kg)</span>
+                                    <input class="form-control" type="number" min=30 max=250 name="weight" id=weight__ID
+                                        placeholder="" required>
                                 </label><br>
-                                <label ><span class="">Height (cm)</span>
-                                    <input class="form-control" type="number" name="height" id=height__ID min=100 max=250 placeholder="" required >
+                                <label><span class="">Height (cm)</span>
+                                    <input class="form-control" type="number" name="height" id=height__ID min=100
+                                        max=250 placeholder="" required>
                                 </label><br>
-                                <label ><span class="">BMI (Calculated for you)</span>
-                                    <input class="form-control" type="number" name="bmi" id=bmi__ID placeholder="" readonly >
+                                <label><span class="">BMI (Calculated for you)</span>
+                                    <input class="form-control" type="number" name="bmi" id=bmi__ID placeholder=""
+                                        readonly>
                                 </label><br>
+                            </fieldset>
+                        </div>
+                        <div class="questiongroup">
+                            <fieldset class="">Gender
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" id=gender__ID value="male" required>
+                                    <span class="checkmark"></span>Male
+                                </label>
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" value="female">
+                                    <span class="checkmark"></span>Female
+                                </label>
                             </fieldset>
                         </div>
                     </div>
                     <div class="form-group box">
                         <div class="row">
                             <div class="col-sm control-group">
-                                <h3>Are you currently taking any of the following medications or therapies regularly (&gt;3 times a week)? 
+                                <h3>Are you currently taking any of the following medications or therapies regularly
+                                    (&gt;3 times a week)?
                                 </h3>
                             </div>
-                        </div>                      
+                        </div>
                         <div class="questiongroup">
                             <fieldset class="pl-4">
                                 <label class="radiobuttons ">
@@ -572,22 +592,23 @@
                                     <span class="checkmark"></span>No </label>
                             </fieldset>
                         </div>
-                        <div id=s4q3__ID >
+                        <div id=s4q3__ID>
                             <h3>Please specify:</h3>
                             <div class="questiongroup box">
                                 <h3>Prescribed sleep medication</h3>
                                 <fieldset class="pl-4">
                                     <label class="radiobuttons ">
-                                        <input type="radio" name="sleep_medication" id=sleep_medication__ID value="Y" required>
+                                        <input type="radio" name="sleep_medication" id=sleep_medication__ID value="Y"
+                                            required>
                                         <span class="checkmark"></span>Yes
                                     </label>
                                     <label class="radiobuttons ">
                                         <input type="radio" name="sleep_medication" value="N">
-                                        <span class="checkmark"></span>No 
+                                        <span class="checkmark"></span>No
                                     </label>
                                 </fieldset>
                             </div>
-                            <div id=s4q4__ID >
+                            <div id=s4q4__ID>
                                 <h3>Please specify:</h3>
                                 <div class="questiongroup box">
                                     <h3>Diazepam (Valium, Antenex, Ducene)</h3>
@@ -598,7 +619,7 @@
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="diazepam" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
@@ -606,12 +627,13 @@
                                     <h3>Flunitrazepam (Hypnodorm</h3>
                                     <fieldset class="pl-4">
                                         <label class="radiobuttons ">
-                                            <input type="radio" name="flunitrazepam" id=flunitrazepam__ID value="Y" required>
+                                            <input type="radio" name="flunitrazepam" id=flunitrazepam__ID value="Y"
+                                                required>
                                             <span class="checkmark"></span>Yes
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="flunitrazepam" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
@@ -624,7 +646,7 @@
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="lorazepam" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
@@ -637,7 +659,7 @@
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="melatonin" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
@@ -650,7 +672,7 @@
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="nitrazepam" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
@@ -663,7 +685,7 @@
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="oxazepam" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
@@ -676,7 +698,7 @@
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="temazepam" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
@@ -689,7 +711,7 @@
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="zopiclone" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
@@ -702,12 +724,12 @@
                                         </label>
                                         <label class="radiobuttons ">
                                             <input type="radio" name="zolpidem" value="N">
-                                            <span class="checkmark"></span>No 
+                                            <span class="checkmark"></span>No
                                         </label>
                                     </fieldset>
                                 </div>
                             </div>
-    
+
                             <div class="questiongroup box">
                                 <h3>CPAP machine</h3>
                                 <fieldset class="pl-4">
@@ -717,7 +739,7 @@
                                     </label>
                                     <label class="radiobuttons ">
                                         <input type="radio" name="cpap" value="N">
-                                        <span class="checkmark"></span>No 
+                                        <span class="checkmark"></span>No
                                     </label>
                                 </fieldset>
                             </div>
@@ -730,12 +752,13 @@
                                     </label>
                                     <label class="radiobuttons ">
                                         <input type="radio" name="mas" value="N">
-                                        <span class="checkmark"></span>No 
+                                        <span class="checkmark"></span>No
                                     </label>
                                 </fieldset>
                             </div>
                             <div class="questiongroup box">
-                                <h3>Psychological therapy at least once a week (specifically for insomnia; excludes counselling services)</h3>
+                                <h3>Psychological therapy at least once a week (specifically for insomnia; excludes
+                                    counselling services)</h3>
                                 <fieldset class="pl-4">
                                     <label class="radiobuttons ">
                                         <input type="radio" name="therapy" id=therapy__ID value="Y" required>
@@ -743,7 +766,7 @@
                                     </label>
                                     <label class="radiobuttons ">
                                         <input type="radio" name="therapy" value="N">
-                                        <span class="checkmark"></span>No 
+                                        <span class="checkmark"></span>No
                                     </label>
                                 </fieldset>
                             </div>
@@ -759,7 +782,8 @@
                     <div class="form-group box">
                         <div class="row">
                             <div class="col-sm control-group">
-                                <h3>Have you used cannabis, cannabinoids or cannabinoid-based medicines in the past 3 months?</h3>
+                                <h3>Have you used cannabis, cannabinoids or cannabinoid-based medicines in the past 3
+                                    months?</h3>
                             </div>
                         </div>
                         <div class="questiongroup">
@@ -776,7 +800,8 @@
                     <div class="form-name box">
                         <div class="questiongroup ">
                             <fieldset class="">
-                                <h3>Over the last 2 weeks, how often have you been bothered by any of the following problems?</h3>
+                                <h3>Over the last 2 weeks, how often have you been bothered by any of the following
+                                    problems?</h3>
                             </fieldset>
                         </div>
                     </div>
@@ -805,17 +830,21 @@
                     </div>
                     <div id=phq9__ID>
                         <div class="form-group box">
-                            <h4 style='color:red;text-align: center;'>If you are feeling depressed, anxious, or suicidal please do not hesitate to contact mental wellbeing
+                            <h4 style='color:red;text-align: center;'>If you are feeling depressed, anxious, or suicidal
+                                please do not hesitate to contact mental wellbeing
                                 support services.<br>
-                                Lifeline Australia | 13 11 14 | <a href='https://lifeline.org.au' target=_blank>lifeline.org.au</a><br>
-                                Beyond Blue | 1300 22 4636 | <a href='https://beyondblue.org.au' target=_blank>beyondblue.org.au</a><br>
+                                Lifeline Australia | 13 11 14 | <a href='https://lifeline.org.au'
+                                    target=_blank>lifeline.org.au</a><br>
+                                Beyond Blue | 1300 22 4636 | <a href='https://beyondblue.org.au'
+                                    target=_blank>beyondblue.org.au</a><br>
                                 If you or someone you know needs immediate help, please call 000</h4>
                         </div>
                     </div>
                     <div class="form-group box">
                         <div class="row">
                             <div class="col-sm control-group">
-                                <h3>Are you willing to have a blood test and provide a urine sample on two occasions?</h3>
+                                <h3>Are you willing to have a blood test and provide a urine sample on two occasions?
+                                </h3>
                             </div>
                         </div>
                         <div class="questiongroup">
@@ -832,7 +861,8 @@
                     <div class="form-group box">
                         <div class="row">
                             <div class="col-sm control-group">
-                                <h3>Do you have difficulties swallowing gel capsules? (You will be required to take 4 gel capsules each night for 8 weeks)</h3>
+                                <h3>Do you have difficulties swallowing gel capsules? (You will be required to take 4
+                                    gel capsules each night for 8 weeks)</h3>
                             </div>
                         </div>
                         <div class="questiongroup">
@@ -863,25 +893,6 @@
                             </fieldset>
                         </div>
                     </div>
-                    <div class="form-group box">
-                        <div class="row">
-                            <div class="col-sm control-group">
-                                <h3>Please confirm your gender</h3>
-                            </div>
-                        </div>
-                        <div class="questiongroup">
-                            <fieldset class="">
-                                <label class="radiobuttons ">
-                                    <input type="radio" name="gender" id=gender__ID value="male" required>
-                                    <span class="checkmark"></span>Male
-                                </label>
-                                <label class="radiobuttons ">
-                                    <input type="radio" name="gender" value="female">
-                                    <span class="checkmark"></span>Female
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
 
                     <div id=female__ID>
                         <div class="form-group box">
@@ -893,7 +904,7 @@
                             <div class="questiongroup">
                                 <fieldset class="pl-4">
                                     <label class="radiobuttons ">
-                                        <input type="radio" name="pregnant" id="pregnant__ID" value="Y" >
+                                        <input type="radio" name="pregnant" id="pregnant__ID" value="Y">
                                         <span class="checkmark"></span>Yes</label>
                                     <label class="radiobuttons ">
                                         <input type="radio" name="pregnant" value="N">
@@ -902,21 +913,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="box" style="text-align:right">
+                        <div class="box-item">
+                            <button type="submit" d=1 class="btn btn-primary btn-lg">Next</button>
+                        </div>
+                    </div>
                 </div>
                 <div id=S6__ID>
-                    <div id=page1__ID class="row  mr-0 ml-0 p-4" style="background-color:#1c2350;">
-                        <div class="col-lg-1 col-sm-0 "></div>
-                        <div class="col-lg-9 col-sm-12 text-center text-white">
-                            <span style="color:#888"></span>
-                            <h2>Asteroid Screening</h2>
-                        </div>
-                        <div class="col-lg-1 col-sm-0 "></div>
-                    </div>
-                    <div id=quest5__ID style='max-width:800px;margin-left:auto;margin-right:auto;'>
                         <div class="form-group box">
                             <div class="row">
                                 <div class="col-sm control-group">
-                                    <h3>You are eligible to participate!
+                                    <h3>Thank you for completing these questions.
                                     </h3>
                                 </div>
                             </div>
@@ -924,22 +931,12 @@
                         <div class="form-group box">
                             <div class="row">
                                 <div class="col-sm control-group">
-                                    <h5>Please proceed by reading the <a href="#" data-toggle="modal"
-                                            data-target="#terms-txt">Participant Information Sheet(click here)</a>
+                                    <h5>Based on the responses you have provided you may be eligible for the research study. If you are interested to participate, please access the full study information <a href="#" data-toggle="modal"
+                                        data-target="#terms-txt">here </a> and provide your contact details below so a member of the study team can contact you to discuss the study with you over the phone
                                         carefully and at your
                                         own pace and tick the box for consent
                                     </h5>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group box">
-                            <h5>I consent to participate in the study</h5>
-                            <div class="questiongroup">
-                                <fieldset>
-                                    <label class="checkboxes">
-                                        <input type="checkbox" name="Consent" value="Yes">
-                                        <span class="check_checkmark"></span> Yes
-                                    </label><br>
                             </div>
                         </div>
                         <div class="form-group box">
@@ -949,12 +946,12 @@
                                     <label><span class="">First name</span>
                                         <input class="form-control" type="text" name="first_name">
                                     </label><br>
-                                    <label><span class="">Family name</span>
+                                    <label><span class="">Last name</span>
                                         <input class="form-control" type="text" name="last_name">
                                     </label><br>
                                 </fieldset>
                                 <fieldset class="subquestions">
-                                    <label><span class="">Mobile number</span>
+                                    <label><span class="">Phone number</span>
                                         <input type="tel" class="form-control" name="phone" id="mobileNumber__ID"
                                             required placeholder="XXXX-XXX-XXX" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
                                     </label><br>
@@ -964,34 +961,6 @@
                                         <input class="form-control" type="email" name="email">
                                     </label><br>
                                 </fieldset>
-                                <div class="questiongroup box">
-                                    <h3>Contact preference</h3>
-                                    <fieldset class="pl-4">
-                                        <label class="radiobuttons ">
-                                            <input type="radio" name="contact" value="Text" required>
-                                            <span class="checkmark"></span>Text
-                                        </label>
-                                        <label class="radiobuttons ">
-                                            <input type="radio" name="contact" value="Email">
-                                            <span class="checkmark"></span>Email
-                                        </label>
-                                        <label class="radiobuttons ">
-                                            <input type="radio" name="contact" value="Both">
-                                            <span class="checkmark"></span>Both
-                                        </label>
-                                    </fieldset>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="form-group box" id="link__ID" style="display:none!important">
-                            <div class="text-center">
-                                Continue ..<br><br>
-                                <i>Click on the link below to continue. Save the link to your favorits so you can
-                                    easlily find it, if you need to return to the quesstionnaires.</i><br><br>
-                                <a id=asteroind_registration__ID target="_blank" style="color:#000;"><span
-                                        style='font-size:1.2rem;font-weight:bold;' id=refnum__ID></span></a>
-                                <br><br>
                             </div>
                         </div>
                         <div class="box" style="text-align:right">
@@ -1006,30 +975,12 @@
                                 Contact Us
                                 <br><br>
                                 Phone: (02) 9114 0xxx<br>
-                                Email: woolcock.asteroid@sydney.edu.au<br><br>
+                                Email: woolcock.canrest@sydney.edu.au<br><br>
                                 Thanks you for your time and effort,<br>
-                                <b>The Asteroid Research Team</b><br>
+                                <b>The CANRest Research Team</b><br>
                             </div>
                         </div>
                         <!----------------------------------------->
-                        <div id="pw__ID" style='display:none'>
-                            <div class='row px-4'>
-                                <div class="col-sm-12 col-lg-12 row_participant__ID">
-                                    <label class=''><span class=''>Record ID</span>
-                                        <input type=text class=form-control id=record__ID readonly>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class='row px-4'>
-                                <div class="col-sm-12 col-lg-6 ">
-                                    <label class=''><span class=''>Password</span>
-                                        <input type=text class=form-control name=_Password>
-                                    </label>
-                                </div>
-                                <div class="col-sm-12 col-lg-6">
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
         </form>
@@ -1116,8 +1067,8 @@
                 $('#phq9__ID').hide();
                 $('#female__ID').hide();
                 $('#pregnant__ID').removeAttr('required');
-                show_section(1);
-                console.log(JSON.stringify(m))
+                show_section(3);
+                console.log("BB: "+JSON.stringify(m))
             });
             //---------------------------------------
             $("#D__ID input[name=illnesses]").on('change', function () {
@@ -1217,6 +1168,17 @@
                     $('#pregnant__ID').removeAttr('required');
                 }
             });
+            //-------------------------------------
+            $('#weight__ID').on('keyup', function () {
+                if ($('#height__ID').val() !== '' || $('#height__ID').val() !== undefined || $('#weight__ID').val() !== '' || $('#weight__ID').val() !== undefined) {
+                    $('#bmi__ID').val((parseFloat($('#weight__ID').val()) / (parseFloat($('#height__ID').val()) * parseFloat($('#height__ID').val())) * 10000).toFixed(1))
+                }
+            })
+            $('#height__ID').on('keyup', function () {
+                if ($('#height__ID').val() !== '' || $('#height__ID').val() !== undefined || $('#weight__ID').val() !== '' || $('#weight__ID').val() !== undefined) {
+                    $('#bmi__ID').val((parseFloat($('#weight__ID').val()) / (parseFloat($('#height__ID').val()) * parseFloat($('#height__ID').val())) * 10000).toFixed(1))
+                }
+            })
             //---------------------------------------
             $('#F__ID button').on('click', function (event) {
                 var d = $(this).attr("d");
@@ -1250,27 +1212,28 @@
             //---------------------------------------
             var calc_scores = function () {
                 //MAP-------------------
-                var age='';age=$("#D__ID input[name=map_age]").val();
-                var height='';height=$("#D__ID input[name=height]").val();
-                var weight='';weight=$("#D__ID input[name=weight]").val();
-                var sex=''; sex=$("#D__ID input[name=gender]:checked").val()
-                var answ=0;
-                var v1=0;
-                var v2=0;
-                var v3=0;
-                if($("#D__ID input[name=MAP_1]:checked").val()!=='DK') { v1=parseInt($("#D__ID input[name=MAP_1]:checked").val());answ++;}
-                if($("#D__ID input[name=MAP_2]:checked").val()!=='DK') { v2=parseInt($("#D__ID input[name=MAP_2]:checked").val());answ++;}
-                if($("#D__ID input[name=MAP_3]:checked").val()!=='DK') { v3=parseInt($("#D__ID input[name=MAP_3]:checked").val());answ++;}
-                if(sex=='Male') sex=1; else sex=0;
-                age=parseFloat(age);
-                height=parseFloat(height);
-                weight=parseFloat(weight);
-                var map_index=1;
-                if(answ>0){map_index=(v1+v2+v3)/answ;}
-                var bmi=weight/height/height*100*100;
-                console.log(map_index+ ' - '+bmi+ ' - '+age+ ' - '+sex)
-                var x=-8.160+1.229*map_index+0.163*bmi-0.028*map_index*bmi+0.032*age+1.278*sex;
-                scores.MAP=(Math.exp(x)/(1+Math.exp(x))).toFixed(2);
+                var age = ''; age = $("#D__ID input[name=mapi_age]").val();
+                var height = ''; height = $("#D__ID input[name=height]").val();
+                var weight = ''; weight = $("#D__ID input[name=weight]").val();
+                var sex = ''; sex = $("#D__ID input[name=gender]:checked").val();
+                var answ = 0;
+                var v1 = 0;
+                var v2 = 0;
+                var v3 = 0;
+                if ($("#D__ID input[name=MAP_1]:checked").val() !== 'DK') { v1 = parseInt($("#D__ID input[name=MAP_1]:checked").val()); answ++; }
+                if ($("#D__ID input[name=MAP_2]:checked").val() !== 'DK') { v2 = parseInt($("#D__ID input[name=MAP_2]:checked").val()); answ++; }
+                if ($("#D__ID input[name=MAP_3]:checked").val() !== 'DK') { v3 = parseInt($("#D__ID input[name=MAP_3]:checked").val()); answ++; }
+                if (sex == 'male') sex = 1; else sex = 0;
+                age = parseFloat(age);
+                height = parseFloat(height);
+                weight = parseFloat(weight);
+                console.log(answ+' - '+age+' - '+height+' - '+weight+' - '+v1+' - '+v2+' - '+v3)
+                var map_index = 1;
+                if (answ > 0) { map_index = (v1 + v2 + v3) / answ; }
+                var bmi = weight / height / height * 100 * 100;
+                console.log(map_index + ' - ' + bmi + ' - ' + age + ' - ' + sex)
+                var x = -8.160 + 1.229 * map_index + 0.163 * bmi - 0.028 * map_index * bmi + 0.032 * age + 1.278 * sex;
+                scores.MAP = (Math.exp(x) / (1 + Math.exp(x))).toFixed(2);
                 //MAP-------------------
                 //ISI-------------------
                 scores.ISI = (
@@ -1301,7 +1264,7 @@
                         $("input[name='fluent_english']:checked").val() == 'N' ||
                         $("input[name='internet']:checked").val() == 'N' ||
                         scores.ISI > 21 ||
-                        scores.ISI < 8){
+                        scores.ISI < 8) {
                         $('#F__ID *').removeAttr('disabled');
                         old_submit(event);
                         if (m.prefix == undefined) { $vm.load_module('not_elig1', '', {}); }
@@ -1318,17 +1281,17 @@
                         $("input[name='travel']:checked").val() == 'Y' ||
                         $("input[name='illnesses']:checked").val() == 'Y' ||
                         $("input[name='sleep_disorders']:checked").val() == 'Y' ||
-                        scores.MAS >= 0.5){
+                        (parseFloat(scores.MAP) >= 0.5)) {
                         $('#F__ID *').removeAttr('disabled');
                         old_submit(event);
-                        if (m.prefix == undefined) { $vm.load_module('not_elig1', '', {}); }
-                        else $vm.load_module(m.prefix + 'not_elig1', '', {});
+                        if (m.prefix == undefined) { $vm.load_module('not_elig2', '', {}); }
+                        else $vm.load_module(m.prefix + 'not_elig2', '', {});
                     }
                     else {
                         show_section(current_I + 1);
                     }
                 }
-                else if (current_I == N-1) {
+                else if (current_I == N - 1) {
                     calc_scores();
                     console.log("All scores: " + JSON.stringify(scores))
                     if ($("input[name='cannabis']:checked").val() == 'Y' ||
@@ -1336,22 +1299,18 @@
                         $("input[name='urine_sample']:checked").val() == 'N' ||
                         $("input[name='swallowing_capsules']:checked").val() == 'Y' ||
                         $("input[name='overseas']:checked").val() == 'Y' ||
-                        ($("input[name='pregnant']:checked").val() == 'Y' && $("input[name='gender']:checked").val() == 'female' )){
-                            $('#F__ID *').removeAttr('disabled');
-                            old_submit(event);
-                            if (m.prefix == undefined) { $vm.load_module('not_elig1', '', {}); }
-                            else $vm.load_module(m.prefix + 'not_elig1', '', {});
+                        ($("input[name='pregnant']:checked").val() == 'Y' && $("input[name='gender']:checked").val() == 'female')) {
+                        $('#F__ID *').removeAttr('disabled');
+                        old_submit(event);
+                        if (m.prefix == undefined) { $vm.load_module('not_elig3', '', {}); }
+                        else $vm.load_module(m.prefix + 'not_elig3', '', {});
                     }
                     else {
                         show_section(current_I + 1);
-                        $('#F__ID input[name=_Password').val($vm.vm_password(8, false));
-                        console.log("AA: " + $('#F__ID input[name=_Password').val())
                         $("input[name='first_name']").prop('required', 'true')
                         $("input[name='last_name']").prop('required', 'true')
                         $("input[name='email']").prop('required', 'true')
                         $("input[name='phone']").prop('required', 'true')
-                        $("input[name='contact']").prop('required', 'true')
-                        $("input[name='consent']").prop('required', 'true')
                     }
                 }
                 else if (current_I == N) {
@@ -1361,23 +1320,6 @@
                     $('#link__ID').show();
                 }
                 else show_section(current_I + 1);
-            }
-            //--------------------------------
-            m.after_insert = function (data, index) {
-                var db = "";
-                console.log(JSON.stringify(index) + " - " + index.result.ops[0].UID)
-                if (window.location.toString().indexOf('tb=demo') != -1) db = "&tb=demo";
-                var d = ""; if (window.location.toString().indexOf('_d=1') != -1) d = "&_d=1";
-                var p = ""; if (window.location.toString().indexOf('_p=1') != -1) p = "&_p=1";
-                var u = "?username=" + index.result.ops[0].UID + "&password=" + $('#F__ID input[name=_Password').val();
-                $('#id__ID').text(index.result.ops[0].UID);
-                $('#password__ID').text($('#F__ID input[name=_Password').val());
-                //console.log(JSON.stringify(m))
-                var q_url = m.questionnaires.replace('$H', $vm.hosting_path) + u + db + d + p;
-                $('#refnum__ID').text(q_url);
-                $('#asteroind_registration__ID').attr("href", q_url)
-                console.log($('#refnum__ID').text());
-                console.log($('#asteroind_registration__ID').html())
             }
             //--------------------------------
         }
