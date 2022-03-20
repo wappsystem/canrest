@@ -97,7 +97,7 @@
                 </div>
                 <div id=S2__ID>
                     <div class="form-group box">
-                        <h3>Please rate the CURRENT (i.e. LAST 2 WEEKS) SEVERITY of your insomnia problem(s).</h3>
+                        <h3><i>Please rate the CURRENT (i.e., DURING THE PAST MONTH) SEVERITY of your insomnia problem(s).</i></h3>
                         <div class="questiongroup ">
                             <fieldset class="subquestions">
                                 <h3>1. Difficulty falling asleep</h3>
@@ -460,9 +460,34 @@
                         </div>
                     </div>
                     <div class="form-name box">
+                        <h3>1. Loud snoring</h3>
+                        <div class="questiongroup">
+                            <fieldset>
+                                <label class="radiobuttons" title="Never">
+                                    <input type="radio" name="MAP_2" value="0" required>
+                                    <span class="checkmark no-dot">0</span>Never</label><br>
+                                <label class="radiobuttons" title="Rarely (less than once a week)">
+                                    <input type="radio" name="MAP_2" value="1">
+                                    <span class="checkmark no-dot">1</span>Rarely (less than once a week)</label><br>
+                                <label class="radiobuttons" title="Sometimes (1-2 /week)">
+                                    <input type="radio" name="MAP_2" value="2">
+                                    <span class="checkmark no-dot">2</span>Sometimes (1-2 /week)</label><br>
+                                <label class="radiobuttons" title="Frequently (3-4/week)">
+                                    <input type="radio" name="MAP_2" value="3">
+                                    <span class="checkmark no-dot">3</span>Frequently (3-4/week)</label><br>
+                                <label class="radiobuttons" title="Always (5-7/week)">
+                                    <input type="radio" name="MAP_2" value="4">
+                                    <span class="checkmark no-dot">4</span>Always (5-7/week)</label><br>
+                                <label class="radiobuttons" title="Don’t Know">
+                                    <input type="radio" name="MAP_2" value="DK">
+                                    <span class="checkmark no-dot">DK</span>Don’t Know</label><br>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="form-name box">
                         <div class="row">
                             <div class="col-sm control-group">
-                                <h3>1. Snorting or gasping</h3>
+                                <h3>2. Snorting or gasping</h3>
                             </div>
                         </div>
 
@@ -490,32 +515,7 @@
                         </div>
                     </div>
                     <div class="form-name box">
-                        <h3>2. Loud snoring</h3>
-                        <div class="questiongroup">
-                            <fieldset>
-                                <label class="radiobuttons" title="Never">
-                                    <input type="radio" name="MAP_2" value="0" required>
-                                    <span class="checkmark no-dot">0</span>Never</label><br>
-                                <label class="radiobuttons" title="Rarely (less than once a week)">
-                                    <input type="radio" name="MAP_2" value="1">
-                                    <span class="checkmark no-dot">1</span>Rarely (less than once a week)</label><br>
-                                <label class="radiobuttons" title="Sometimes (1-2 /week)">
-                                    <input type="radio" name="MAP_2" value="2">
-                                    <span class="checkmark no-dot">2</span>Sometimes (1-2 /week)</label><br>
-                                <label class="radiobuttons" title="Frequently (3-4/week)">
-                                    <input type="radio" name="MAP_2" value="3">
-                                    <span class="checkmark no-dot">3</span>Frequently (3-4/week)</label><br>
-                                <label class="radiobuttons" title="Always (5-7/week)">
-                                    <input type="radio" name="MAP_2" value="4">
-                                    <span class="checkmark no-dot">4</span>Always (5-7/week)</label><br>
-                                <label class="radiobuttons" title="Don’t Know">
-                                    <input type="radio" name="MAP_2" value="DK">
-                                    <span class="checkmark no-dot">DK</span>Don’t Know</label><br>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="form-name box">
-                        <h3>3. Breathing stops, choke, or struggle for breath</h3>
+                        <h3>3. Breathing stops/ choke/ or struggle for breath</h3>
                         <div class="questiongroup">
                             <fieldset>
                                 <label class="radiobuttons" title="Never">
@@ -563,13 +563,13 @@
                             </fieldset>
                         </div>
                         <div class="questiongroup">
-                            <fieldset class="">Gender
+                            <fieldset class="">Please confirm your sex assigned at birth<br>
                                 <label class="radiobuttons ">
-                                    <input type="radio" name="gender" id=gender__ID value="male" required>
+                                    <input type="radio" name="mapi_gender" id=mapi_gender__ID value="male" required>
                                     <span class="checkmark"></span>Male
-                                </label>
+                                </label><br>
                                 <label class="radiobuttons ">
-                                    <input type="radio" name="gender" value="female">
+                                    <input type="radio" name="mapi_gender" value="female">
                                     <span class="checkmark"></span>Female
                                 </label>
                             </fieldset>
@@ -916,6 +916,38 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group box">
+                        <div class="row">
+                            <div class="col-sm control-group">
+                                <h3>What gender do you identify with?</h3>
+                            </div>
+                        </div>
+                        <div class="questiongroup">
+                            <fieldset class="">
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" id=gender__ID value="male" required>
+                                    <span class="checkmark"></span>Male
+                                </label><br>
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" value="female">
+                                    <span class="checkmark"></span>Female
+                                </label><br>
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" value="other">
+                                    <span class="checkmark"></span>Other
+                                </label><br>
+                                <div id=s4qgender__ID>
+                                    <label>Please specify
+                                        <input class=form-control type="text" name="gender_other" id=gender_other__ID >
+                                    </label>
+                                </div>
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" value="no answer">
+                                    <span class="checkmark"></span>prefer not to answer
+                                </label><br>        
+                            </fieldset>
+                        </div>
+                    </div>
                     <div class="box" style="text-align:right">
                         <div class="box-item">
                             <button type="submit" d=1 class="btn btn-primary btn-lg">Next</button>
@@ -996,13 +1028,13 @@
                 </div>
                 <div class="modal-body">
                     <div align="right">
-                        <a href="pdf/Participant_Information_Sheet_and_Consent_Form.pdf" download="">Download a copy of
+                        <a href="pdf/PICF_demo.pdf" download="">Download a copy of
                             the Information Sheet
                             <img src="https://img.icons8.com/office/40/000000/pdf.png"></a>
                     </div>
                     <object data="pdf/Participant_Information_Sheet_and_Consent_Form.pdf" type="application/pdf"
                         frameborder="0" width="100%" height="2000px">
-                        <embed src="pdf/Participant_Information_Sheet_and_Consent_Form.pdf" width="100%"
+                        <embed src="pdf/PICF_demo.pdf" width="100%"
                             height="2000px" />
                     </object>
                 </div>
@@ -1062,10 +1094,15 @@
                 $('#temazepam__ID').removeAttr('required');
                 $('#zopiclone__ID').removeAttr('required');
                 $('#zolpidem__ID').removeAttr('required');
+
+                $('#gender_other__ID').removeAttr('required');
+                $('#s4qgender__ID').hide();
+
                 $('#phq9__ID').hide();
                 $('#female__ID').hide();
                 $('#pregnant__ID').removeAttr('required');
-                show_section(1);
+
+                show_section(6);
                 //console.log("BB: "+JSON.stringify(m))
             });
             //---------------------------------------
@@ -1145,6 +1182,28 @@
                     $('#zopiclone__ID').removeAttr('required');
                     $('#zolpidem__ID').removeAttr('required');
                 }
+            })
+            //---------------------------------------
+            $("#D__ID input[name=mapi_gender]").on('change', function () {
+                if ($("#D__ID input[name=mapi_gender]:checked").val() == 'female') {
+                    $('#female__ID').show();
+                    $('#pregnant__ID').prop('required', 'true');
+                }
+                else {
+                    $('#female__ID').hide();
+                    $('#pregnant__ID').removeAttr('required');
+                }
+            });
+            //---------------------------------------
+            $("#D__ID input[name=gender]").on('change', function () {
+                if ($("#D__ID input[name=gender]:checked").val() == 'other') {
+                    $('#s4qgender__ID').show();
+                    $('#gender_other__ID').prop('required', 'true');
+                }
+                else {
+                    $('#s4qgender__ID').hide();
+                    $('#gender_other__ID').removeAttr('required');
+                }
             });
             //---------------------------------------
             $("#D__ID input[name=PHQ_9]").on('change', function () {
@@ -1153,17 +1212,6 @@
                 }
                 else {
                     $('#phq9__ID').hide();
-                }
-            });
-            //---------------------------------------
-            $("#D__ID input[name=gender]").on('change', function () {
-                if ($("#D__ID input[name=gender]:checked").val() == 'female') {
-                    $('#female__ID').show();
-                    $('#pregnant__ID').prop('required', 'true');
-                }
-                else {
-                    $('#female__ID').hide();
-                    $('#pregnant__ID').removeAttr('required');
                 }
             });
             //-------------------------------------
@@ -1213,7 +1261,7 @@
                 var age = ''; age = $("#D__ID input[name=mapi_age]").val();
                 var height = ''; height = $("#D__ID input[name=height]").val();
                 var weight = ''; weight = $("#D__ID input[name=weight]").val();
-                var sex = ''; sex = $("#D__ID input[name=gender]:checked").val();
+                var sex = ''; sex = $("#D__ID input[name=mapi_gender]:checked").val();
                 var answ = 0;
                 var v1 = 0;
                 var v2 = 0;
@@ -1279,6 +1327,7 @@
                         $("input[name='travel']:checked").val() == 'Y' ||
                         $("input[name='illnesses']:checked").val() == 'Y' ||
                         $("input[name='sleep_disorders']:checked").val() == 'Y' ||
+                        $("input[name='medication']:checked").val() == 'Y' ||
                         (parseFloat(scores.MAP) >= 0.5)) {
                         $('#F__ID *').removeAttr('disabled');
                         old_submit(event);
@@ -1297,7 +1346,7 @@
                         $("input[name='urine_sample']:checked").val() == 'N' ||
                         $("input[name='swallowing_capsules']:checked").val() == 'Y' ||
                         $("input[name='overseas']:checked").val() == 'Y' ||
-                        ($("input[name='pregnant']:checked").val() == 'Y' && $("input[name='gender']:checked").val() == 'female')) {
+                        ($("input[name='pregnant']:checked").val() == 'Y' && $("input[name='mapi_gender']:checked").val() == 'female')) {
                         $('#F__ID *').removeAttr('disabled');
                         old_submit(event);
                         if (m.prefix == undefined) { $vm.load_module('not_elig3', '', {}); }
