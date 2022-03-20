@@ -1,5 +1,6 @@
 (function(){
     var modules={
+        "elig1":         {url:"$H/m/elig1.html"},
         "not_elig1":         {url:"$H/m/not_elig1.html"},
         "not_elig2":         {url:"$H/m/not_elig2.html"},
         "not_elig3":         {url:"$H/m/not_elig3.html"},

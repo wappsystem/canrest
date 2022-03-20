@@ -1102,7 +1102,7 @@
                 $('#female__ID').hide();
                 $('#pregnant__ID').removeAttr('required');
 
-                show_section(1);
+                show_section(6);
                 //console.log("BB: "+JSON.stringify(m))
             });
             //---------------------------------------
@@ -1364,7 +1364,8 @@
                     $('#F__ID *').removeAttr('disabled');
                     $('#submit1__ID').hide();
                     old_submit(event);
-                    $('#link__ID').show();
+                    if (m.prefix == undefined) { $vm.load_module('elig1', '', {}); }
+                        else $vm.load_module(m.prefix + 'elig1', '', {});
                 }
                 else show_section(current_I + 1);
             }
