@@ -246,9 +246,12 @@
                             </fieldset>
                         </div>
                     </div>
-                    <div class="box" style="text-align:right">
+                    <div class="box">
                         <div class="box-item">
-                            <button type="submit" d=1 class="btn btn-primary btn-lg">Next</button>
+                            <div style="padding-bottom:30px">
+                                <button type="back" d=-1 style='float:left' class="btn btn-primary btn-lg">Previous</button>
+                                <button type="submit" d=1 style='float:right' class="btn btn-primary btn-lg">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -442,7 +445,10 @@
                     </div>
                     <div class="box" style="text-align:right">
                         <div class="box-item">
-                            <button type="submit" d=1 class="btn btn-primary btn-lg">Next</button>
+                            <div style="padding-bottom:30px">
+                                <button type="back" d=-1 style='float:left' class="btn btn-primary btn-lg">Previous</button>
+                                <button type="submit" d=1 style='float:right' class="btn btn-primary btn-lg">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -572,6 +578,38 @@
                                     <input type="radio" name="mapi_gender" value="female">
                                     <span class="checkmark"></span>Female
                                 </label>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="form-group box">
+                        <div class="row">
+                            <div class="col-sm control-group">
+                                <h3>What gender do you identify with?</h3>
+                            </div>
+                        </div>
+                        <div class="questiongroup">
+                            <fieldset class="">
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" id=gender__ID value="male" required>
+                                    <span class="checkmark"></span>Male
+                                </label><br>
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" value="female">
+                                    <span class="checkmark"></span>Female
+                                </label><br>
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" value="other">
+                                    <span class="checkmark"></span>Other
+                                </label><br>
+                                <div id=s4qgender__ID>
+                                    <label>Please specify
+                                        <input class=form-control type="text" name="gender_other" id=gender_other__ID >
+                                    </label>
+                                </div>
+                                <label class="radiobuttons ">
+                                    <input type="radio" name="gender" value="no answer">
+                                    <span class="checkmark"></span>prefer not to answer
+                                </label><br>        
                             </fieldset>
                         </div>
                     </div>
@@ -777,7 +815,10 @@
                     </div>
                     <div class="box" style="text-align:right">
                         <div class="box-item">
-                            <button type="submit" d=1 class="btn btn-primary btn-lg">Next</button>
+                            <div style="padding-bottom:30px">
+                                <button type="back" d=-1 style='float:left' class="btn btn-primary btn-lg">Previous</button>
+                                <button type="submit" d=1 style='float:right' class="btn btn-primary btn-lg">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -800,15 +841,8 @@
                             </fieldset>
                         </div>
                     </div>
-                    <div class="form-name box">
-                        <div class="questiongroup ">
-                            <fieldset class="">
-                                <h3>Over the last 2 weeks, how often have you been bothered by any of the following
-                                    problems?</h3>
-                            </fieldset>
-                        </div>
-                    </div>
                     <div class="form-group box">
+                        <h3>Over the last 2 weeks, how often have you been bothered by the following problem,</h3>
                         <h3>Thoughts that you would be better off dead or of hurting yourself in some way</h3>
                         <div class="questiongroup">
                             <fieldset class="subquestions">
@@ -846,7 +880,7 @@
                     <div class="form-group box">
                         <div class="row">
                             <div class="col-sm control-group">
-                                <h3>Are you willing to have a blood test and provide a urine sample on two occasions?
+                                <h3>Are you willing to have a <i><u>fasting</u></i> blood test and provide a urine sample on two occasions?
                                 </h3>
                             </div>
                         </div>
@@ -916,41 +950,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group box">
-                        <div class="row">
-                            <div class="col-sm control-group">
-                                <h3>What gender do you identify with?</h3>
-                            </div>
-                        </div>
-                        <div class="questiongroup">
-                            <fieldset class="">
-                                <label class="radiobuttons ">
-                                    <input type="radio" name="gender" id=gender__ID value="male" required>
-                                    <span class="checkmark"></span>Male
-                                </label><br>
-                                <label class="radiobuttons ">
-                                    <input type="radio" name="gender" value="female">
-                                    <span class="checkmark"></span>Female
-                                </label><br>
-                                <label class="radiobuttons ">
-                                    <input type="radio" name="gender" value="other">
-                                    <span class="checkmark"></span>Other
-                                </label><br>
-                                <div id=s4qgender__ID>
-                                    <label>Please specify
-                                        <input class=form-control type="text" name="gender_other" id=gender_other__ID >
-                                    </label>
-                                </div>
-                                <label class="radiobuttons ">
-                                    <input type="radio" name="gender" value="no answer">
-                                    <span class="checkmark"></span>prefer not to answer
-                                </label><br>        
-                            </fieldset>
-                        </div>
-                    </div>
                     <div class="box" style="text-align:right">
                         <div class="box-item">
-                            <button type="submit" d=1 class="btn btn-primary btn-lg">Next</button>
+                            <div style="padding-bottom:30px">
+                                <button type="back" d=-1 style='float:left' class="btn btn-primary btn-lg">Previous</button>
+                                <button type="submit" d=1 style='float:right' class="btn btn-primary btn-lg">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
