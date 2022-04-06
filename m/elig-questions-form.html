@@ -982,10 +982,10 @@
                             <div class="questiongroup ">
                                 <fieldset class="subquestions">
                                     <label><span class="">First name</span>
-                                        <input class="form-control" type="text" name="first_name">
+                                        <input class="form-control" type="text" name="first_name" required>
                                     </label><br>
                                     <label><span class="">Last name</span>
-                                        <input class="form-control" type="text" name="last_name">
+                                        <input class="form-control" type="text" name="last_name" required>
                                     </label><br>
                                 </fieldset>
                                 <fieldset class="subquestions">
@@ -996,7 +996,39 @@
                                 </fieldset>
                                 <fieldset class="subquestions">
                                     <label style="width:100%"><span class="">Email Address</span>
-                                        <input class="form-control" type="email" name="email">
+                                        <input class="form-control" type="email" name="email" required>
+                                    </label><br>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="form-group box">
+                            <h3>Availability</h3>
+                            <div class="questiongroup ">
+                                <fieldset class="subquestions">
+                                    <label><span class="">When are you generally available for a phone call during workdays (Monday to Friday)?</span>
+                                        <fieldset class="pl-4">
+                                            <label class="radiobuttons ">
+                                                <input type="radio" name="availability" value="7-9" >
+                                                <span class="checkmark"></span>7 AM to 9 AM
+                                            </label>
+                                            <label class="radiobuttons ">
+                                                <input type="radio" name="availability" value="9-12" >
+                                                <span class="checkmark"></span>9 AM to 12 PM
+                                            </label>
+                                            <label class="radiobuttons ">
+                                                <input type="radio" name="availability" value="12-17" >
+                                                <span class="checkmark"></span>12 PM to 5 PM
+                                            </label>
+                                            <label class="radiobuttons ">
+                                                <input type="radio" name="availability" value="17-20" >
+                                                <span class="checkmark"></span>5 PM to 8 PM
+                                            </label>
+                                        </fieldset>
+                                            </label><br>
+                                </fieldset>
+                                <fieldset class="subquestions">
+                                    <label style="width:100%"><span class="">Additional information:</span>
+                                        <textarea type="text" class="form-control" name="availability_additional"></textarea>
                                     </label><br>
                                 </fieldset>
                             </div>
