@@ -551,7 +551,7 @@
                         <div class="questiongroup">
                             <fieldset class="subquestions">
                                 <label><span class="">Age (years)</span>
-                                    <input class="form-control" type="number" min=0 max=110 name="mapi_age" placeholder=""
+                                    <input class="form-control" type="number" min=18 max=65 name="mapi_age" placeholder=""
                                         required>
                                 </label><br>
                                 <label><span class="">Weight (kg)</span>
@@ -1139,7 +1139,7 @@
                 $('#female__ID').hide();
                 $('#pregnant__ID').removeAttr('required');
 
-                show_section(1);
+                show_section(4);
                 //console.log("BB: "+JSON.stringify(m))
             });
             //---------------------------------------
@@ -1252,12 +1252,12 @@
                 }
             });
             //-------------------------------------
-            $('#weight__ID').on('keyup', function () {
+            $('#weight__ID').on('change', function () {
                 if ($('#height__ID').val() !== '' || $('#height__ID').val() !== undefined || $('#weight__ID').val() !== '' || $('#weight__ID').val() !== undefined) {
                     $('#bmi__ID').val((parseFloat($('#weight__ID').val()) / (parseFloat($('#height__ID').val()) * parseFloat($('#height__ID').val())) * 10000).toFixed(1))
                 }
             })
-            $('#height__ID').on('keyup', function () {
+            $('#height__ID').on('change', function () {
                 if ($('#height__ID').val() !== '' || $('#height__ID').val() !== undefined || $('#weight__ID').val() !== '' || $('#weight__ID').val() !== undefined) {
                     $('#bmi__ID').val((parseFloat($('#weight__ID').val()) / (parseFloat($('#height__ID').val()) * parseFloat($('#height__ID').val())) * 10000).toFixed(1))
                 }
