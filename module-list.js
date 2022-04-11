@@ -6,6 +6,10 @@
         "not_elig3":         {url:"$H/m/not_elig3.html"},
         "recruitment-data": {url:"$H/m/elig-questions-data.html",Table:"canrest-recruitment-record",form_module:"recruitment-form",router:1},
         "recruitment-form": {url:"$H/m/elig-questions-form.html",Table:"canrest-recruitment-record"},
+        "recruitment-1-data": {url:"$H/m/elig-1-questions-data.html",Table:"canrest-recruitment-record"},
+        "recruitment-2-data": {url:"$H/m/elig-2-questions-data.html",Table:"canrest-recruitment-record"},
+        "recruitment-3-data": {url:"$H/m/elig-3-questions-data.html",Table:"canrest-recruitment-record"},
+        "recruitment-elig-data": {url:"$H/m/elig-all-questions-data.html",Table:"canrest-recruitment-record"},
     }
     for(p in modules){
         $vm.module_list[p]=modules[p];
