@@ -11,6 +11,7 @@
         "recruitment-2-data": {url:"$H/m/elig-2-questions-data.html",Table:"canrest-recruitment-record"},
         "recruitment-3-data": {url:"$H/m/elig-3-questions-data.html",Table:"canrest-recruitment-record"},
         "recruitment-4-data": {url:"$H/m/elig-4-questions-data.html",Table:"canrest-recruitment-record"},
+        "recruitment-participate-data": {url:"$H/m/elig-part-questions-data.html",Table:"canrest-recruitment-record"},
         "recruitment-elig-data": {url:"$H/m/elig-all-questions-data.html",Table:"canrest-recruitment-record",form_module:"recruitment-elig-form",task_name:"Eligible"},
         "recruitment-elig-form": {url:"$H/m/elig-all-questions-form.html",Table:"canrest-recruitment-record",task_name:"Eligible"},
     }

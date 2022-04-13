@@ -6,11 +6,11 @@
       //-------------------------------------
       VmInclude:__HOST__/js/grid.01.js
       //-------------------------------------
-      $('#title__ID').text('CanRest Screening - Failing third check')
+      $('#title__ID').text('CanRest Screening - Participating')
       //-------------------------------------
-      var fields=""; //"first_name,last_name,email,phone";
-      //fields+=",availability,availability_additional";
-      fields+="age,location,fluent_english,internet";
+      var fields="participate,first_name,last_name,email,phone";
+      fields+=",availability,availability_additional";
+      fields+="contact,age,location,fluent_english,internet";
       fields+=",ISI_1,ISI_2,ISI_3,ISI_4,ISI_5,ISI_6,ISI_7,ISI";
       fields+=",shiftwork,travel,illnesses,depression,heart_failure,epilepsy,bipolar,dementia,sleep_disorders,osa,rls";
       fields+=",mapi_age,gender,weight,height,bmi,MAP_1,MAP_2,MAP_3,MAP";
@@ -19,7 +19,7 @@
       m.fields=""+fields+",Submit_date,Submitted_by,_Delete";
       //-------------------------------------
       m.load = function () {
-        m.query = {$and:[{ "Data.cannabis": { "$ne": "" }},{"Data.cannabis": {$exists: true }},{ "Data.first_name": { "$eq": "" }}]}
+        m.query = { "Data.participate": { "$eq": "Y" }}
         //m.query = { "Data.cannabis": { "$ne": "" }}
      }
   }
