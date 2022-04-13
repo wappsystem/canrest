@@ -19,21 +19,10 @@
                 <div class="hero-inner e-hero-inner not-eligible">
                   <div class="e-hero-text eligible-box-content">
                     <h1>Thank you for completing these questions.</h1>
-                    <p class="e-p1">Unfortunately, your response indicate that you are not eligible for this research study.</p>
-                    <p class="e-p1"></p>
-                    <!--<p class="e-p2">If you need help with any sleep difficulties or medical issues, you might consider the following:</p>
-                    <ul>
-                      <li>
-                        <p>Visit your GP or other health professional. If you don’t have a GP, there are some online service locators to help you find a GP or other services.</p>
-                      </li>
-                      <li>
-                        <p>
-                          Find a sleep service near you on the Australasian Sleep Association service directory. For further information about sleep, visit the Sleep Health Foundation
-                          website:
-                          <a href="https://www.sleephealthfoundation.org.au" target=_blank >www.sleephealthfoundation.org.au</a>
-                        </p>
-                      </li>
-                    </ul>-->
+                    <p class="e-p1">Unfortunately, your answers have indicated that you are not eligible for this study.</p>
+                    <p class="e-p1" id="reason__ID"></p>
+                    <p class="e-p2">For further help, guidance, and information you may contact your General Practitioner (GP) or access the sleep Health Foundation Website <a href="https://www.sleephealthfoundation.org.au" target=_blank >Sleep Health Foundation</a></p>
+                    <p class="e-p2">Thank you for your interest in this study</p>
                   </div>
                 </div>
               </div>
@@ -47,7 +36,11 @@
       //-------------------------------------
       m.default_load=m.load;
       m.load=function(){
-          console.log("AA: "+JSON.stringify(m))
+          //console.log("AA: "+JSON.stringify(m))
+          if(m.input.my_answers.pregnant=='Y') $('#reason__ID').text('As you are currently pregnant or breastfeeding, you are not eligible for the study.')
+          if(m.input.my_answers.overseas=='Y') $('#reason__ID').text('Unfortunately, as you are planning overseas travel in the next 3 month, you are not eligible for the study.')
+          if(m.input.my_answers.urine_sample=='N') $('#reason__ID').text('Unfortunately, as you are not prepared to undergo a fasting blood or urine test, you are not eligible for the study.')
+          if(m.input.my_answers.cannabis=='Y') $('#reason__ID').html('Based on your use of cannabis, cannabinoids or cannabinoid-based medicines over the last 3 months you are not <span style="color:red">currently</span> eligible for this study.')
           m.default_load();
           $('#D__ID').scrollTop(0);
           $(window).scrollTop(0);
@@ -56,7 +49,7 @@
     }
     </script>
     <style>
-        VmInclude:__CURRENT_PATH__/../../css/style.css
+       VmInclude:__HOST__/css/style.css
 
     </style>
 </div>

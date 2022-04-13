@@ -132,13 +132,13 @@
 		function F__ID(){
 			var m=$vm.module_list['__MODULE__'];
 			if(m.prefix==undefined) m.prefix="";
-            console.log("AAA: "+JSON.stringify(m.input))
+            //console.log("AAA: "+JSON.stringify(m.input))
 			$('#yes__ID').on('click',function(){	$vm.load_module(m.prefix+'recruitment-form','',{});	})
 			$('#no__ID').on('click',function(){		$('#message__ID').css('display','block')})
 		}
 		$vm.home_ready=1;
 	</script>
 	<style>
-        VmInclude:__CURRENT_PATH__/../../css/style.css
+        VmInclude:__HOST__/css/style.css
 	</style>
 </div>
