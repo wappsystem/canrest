@@ -146,7 +146,7 @@
 }
 @font-face {
     font-family: icomoon;
-    src: url(../canrest/fonts/icomoon.woff) format("woff");
+    src: url(__HOST__/fonts/icomoon.woff) format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: block;
@@ -221,49 +221,49 @@
 }
 @font-face {
     font-family: Asap;
-    src: url(../canrest/fonts/Asap-Medium.woff2) format("woff2"), url(../canrest/fonts/Asap-Medium.woff) format("woff");
+    src: url(__HOST__/fonts/Asap-Medium.woff2) format("woff2"), url(__HOST__/fonts/Asap-Medium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: Asap;
-    src: url(../canrest/fonts/Asap-Bold.woff2) format("woff2"), url(../canrest/fonts/Asap-Bold.woff) format("woff");
+    src: url(__HOST__/fonts/Asap-Bold.woff2) format("woff2"), url(__HOST__/fonts/Asap-Bold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: Asap;
-    src: url(../canrest/fonts/Asap-Regular.woff2) format("woff2"), url(../canrest/fonts/Asap-Regular.woff) format("woff");
+    src: url(__HOST__/fonts/Asap-Regular.woff2) format("woff2"), url(__HOST__/fonts/Asap-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: Asap;
-    src: url(../canrest/fonts/Asap-SemiBold.woff2) format("woff2"), url(../canrest/fonts/Asap-SemiBold.woff) format("woff");
+    src: url(__HOST__/fonts/Asap-SemiBold.woff2) format("woff2"), url(__HOST__/fonts/Asap-SemiBold.woff) format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: Tiempos Headline;
-    src: url(../canrest/fonts/TiemposHeadline-Bold.woff2) format("woff2"), url(../canrest/fonts/TiemposHeadline-Bold.woff) format("woff");
+    src: url(__HOST__/fonts/TiemposHeadline-Bold.woff2) format("woff2"), url(__HOST__/fonts/TiemposHeadline-Bold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: caveat;
-    src: url(../canrest/fonts/Caveat-VariableFont_wght.ttf) format("ttf"), url(../canrest/fonts/Caveat-VariableFont_wght.ttf) format("ttf");
+    src: url(__HOST__/fonts/Caveat-VariableFont_wght.ttf) format("ttf"), url(__HOST__/fonts/Caveat-VariableFont_wght.ttf) format("ttf");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: caveat;
-    src: url(../canrest/fonts/caveat-v14-latin-regular.woff2) format("woff2"), url(../canrest/fonts/caveat-v14-latin-regular.woff) format("woff");
+    src: url(__HOST__/fonts/caveat-v14-latin-regular.woff2) format("woff2"), url(__HOST__/fonts/caveat-v14-latin-regular.woff) format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -724,7 +724,7 @@ body {
     padding: 58px 0;
     color: #fff;
     background-color: #1b6d5f;
-    background-image: url(../canrest/images/bg-04.png);
+    background-image: url(__HOST__/images/bg-04.png);
     background-repeat: no-repeat;
     background-position: 93%;
     letter-spacing: 0.1px;
@@ -1962,7 +1962,7 @@ body {
     #D__ID .consumer h2 {
         margin-bottom: 78px;
         padding: 0 50px;
-        background: url(../canrest/images/c-title-bg.png);
+        background: url(__HOST__/images/c-title-bg.png);
         background-repeat: round;
         background-position: unset;
     }
@@ -2189,7 +2189,7 @@ body {
         position: absolute;
         left: -42px;
         top: 9%;
-        background: url(../canrest/images/cta-before.png);
+        background: url(__HOST__/images/cta-before.png);
         background-repeat: no-repeat;
         width: 22%;
         height: 100%;
@@ -2238,7 +2238,7 @@ body {
         padding: 150px 0;
     }
     #D__ID .cti:before {
-        background-image: url(../canrest/images/leaf-before.png);
+        background-image: url(__HOST__/images/leaf-before.png);
         left: 0;
         width: 250px;
     }
@@ -2252,7 +2252,7 @@ body {
         background-size: contain;
     }
     #D__ID .cti:after {
-        background-image: url(../canrest/images/leaf-after.png);
+        background-image: url(__HOST__/images/leaf-after.png);
         right: 0;
         width: 172px;
     }
