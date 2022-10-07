@@ -1,0 +1,81 @@
+<div id=D__ID>
+    <form id="F__ID">
+        <div id="header">
+            <header class="header header-fixed">
+              <div class="container">
+                <div class="header-inner">
+                  <div class="logo">
+                    <a href="#">
+                      <img src="images/c-logo.png" alt="SleepFix">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+          
+          <main class="main" id="content">
+            <section class="hero e-hero" style="background-image: url(images/c-bg-0.png)">
+              <div class="container">
+                <div class="hero-inner e-hero-inner not-eligible">
+                  <div class="e-hero-text eligible-box-content">
+                    <h1>Register your interest</h1>
+                    <div class="form-group text-left">
+                      <p class="e-p1">You can provide your contact details below and the research team will contact you.</p>
+                      <div class="questiongroup">
+                          <fieldset class="pl-4">
+                              <label><span>Name</span>
+                                  <input type="text" class=form-control name="name" required>
+                              </label>
+                              <label><span>Email</span>
+                                <input type="email" class=form-control name="email" required>
+                              </label>
+                              <label><span>Contact number</span>
+                                <input type="text" class=form-control name="phone" required>
+                              </label>
+                              <label><span>Postcode </span>
+                                <input type="number" class=form-control style="width:150px" name="postcode" required>
+                              </label>
+                                <button id="submit__ID" type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                <div id="thank_you__ID" style="display:none">
+                                  <p class="e-p1">Thank you! The research team will contact you.</p>
+                                </div>
+                          </fieldset>
+                      </div>
+                    </div>
+                    <p class="e-p1">To found out more, head to  <a href=https://www.cupidstudy.com.au target="_blank">www.cupidstudy.com.au</a></p>
+                                    </div>
+                </div>
+              </div>
+            </section>
+          </main>          
+    </form>
+    <script>
+    function F__ID(){
+      //-------------------------------------
+      VmInclude:'__COMPONENT__/f/form.01.js'
+      //-------------------------------------
+      m.default_load=m.load;
+      m.load=function(){
+          //console.log("AAB: "+JSON.stringify(m.input))
+          /*if(parseInt(m.input.scores.ISI)>21) $('#reason__ID').text('Your insomnia symptoms are above the level required to be included in this study.')
+          if(parseInt(m.input.scores.ISI)<8) $('#reason__ID').text('Your insomnia symptoms are below the level required to be included in this study.')
+          if(m.input.my_answers.internet=='N') $('#reason__ID').text('You need to have access to the internet and a phone.')
+          if(m.input.my_answers.fluent_english=='N') $('#reason__ID').text('You need to be fluent in English.')
+          if(m.input.my_answers.location=='N') $('#reason__ID').text('You need to currently live in Australia.')
+          if(m.input.my_answers.age=='N') $('#reason__ID').text('You need to be aged between 18 and 65 to participate in this study.')
+          */
+          m.default_load();
+          $('#D__ID').scrollTop(0);
+          $(window).scrollTop(0);
+      }
+      m.after_insert = function (data,index) {
+        $('#thank_you__ID').show()
+      }
+    }
+    </script>
+    <style>
+        VmInclude:__HOST__/css/style.css
+
+    </style>
+</div>

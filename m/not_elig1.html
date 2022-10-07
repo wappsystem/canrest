@@ -20,8 +20,14 @@
                 <div class="hero-inner e-hero-inner not-eligible">
                   <div class="e-hero-text eligible-box-content">
                     <h1>Thank you for completing these questions.</h1>
-                    <p class="e-p1">Unfortunately, your answers have indicated that you are not eligible for this study.</p>
-                    <p class="e-p1" id="reason__ID"></p>
+                    <p class="e-p2">Unfortunately, your answers have indicated that you are not eligible for this study.</p>
+                    <p class="e-p2" id="reason__ID"></p>
+                    <div id="cupid__ID" style="display:none">
+                      <p class="pt-1" style="font-size:x-large;font-weight: bolder;">You may be eligible for another study we are conducting which will test a different cannabis-based medication for chronic insomnia disorder (the CUPID study).</p>
+                      <p class="pt-1">You can provide your contact details and the research team will contact you.</p>
+                      <button id="contact__ID" type="button" class="btn btn-primary btn-lg">Provide contact details</button><br><br>
+                      <p class="pb-3">To found out more, head to  <a href=https://www.cupidstudy.com.au target="_blank">www.cupidstudy.com.au</a></p>
+                    </div>
                     <p class="e-p2">For further help, guidance, and information you may contact your General Practitioner (GP) or access the sleep Health Foundation Website <a href="https://www.sleephealthfoundation.org.au" target=_blank >Sleep Health Foundation</a></p>
                     <p class="e-p2">Thank you for your interest in this study</p>
                   </div>
@@ -38,16 +44,43 @@
       m.default_load=m.load;
       m.load=function(){
           //console.log("AAB: "+JSON.stringify(m.input))
-          if(parseInt(m.input.scores.ISI)>21) $('#reason__ID').text('Your insomnia symptoms are above the level required to be included in this study.')
-          if(parseInt(m.input.scores.ISI)<8) $('#reason__ID').text('Your insomnia symptoms are below the level required to be included in this study.')
-          if(m.input.my_answers.internet=='N') $('#reason__ID').text('You need to have access to the internet and a phone.')
-          if(m.input.my_answers.fluent_english=='N') $('#reason__ID').text('You need to be fluent in English.')
-          if(m.input.my_answers.location=='N') $('#reason__ID').text('You need to currently live in Australia.')
-          if(m.input.my_answers.age=='N') $('#reason__ID').text('You need to be aged between 18 and 65 to participate in this study.')
+          $('#reason__ID').text('Your insomnia symptoms are above the level required to be included in this study.');
+            $('#cupid__ID').show();
+
+          if(parseInt(m.input.scores.ISI)>21) {
+            $('#reason__ID').text('Your insomnia symptoms are above the level required to be included in this study.');
+            $('#cupid__ID').show();
+          }
+          if(parseInt(m.input.scores.ISI)<8) {
+            $('#reason__ID').text('Your insomnia symptoms are below the level required to be included in this study.')
+            $('#cupid__ID').hide();
+          }
+          if(m.input.my_answers.internet=='N') {
+            $('#reason__ID').text('You need to have access to the internet and a phone.')
+            $('#cupid__ID').hide();
+          }
+          if(m.input.my_answers.fluent_english=='N') {
+            $('#reason__ID').text('You need to be fluent in English.')
+            $('#cupid__ID').hide();
+          }
+
+          if(m.input.my_answers.location=='N') {
+            $('#reason__ID').text('You need to currently live in Australia.')
+            $('#cupid__ID').hide();
+          }
+          if(m.input.my_answers.age=='N') {
+            $('#reason__ID').text('You need to be aged between 18 and 65 to participate in this study.')
+            $('#cupid__ID').hide();
+          }
           m.default_load();
           $('#D__ID').scrollTop(0);
           $(window).scrollTop(0);
       }
+      $('#contact__ID').on('click',function(){
+        if (m.prefix == undefined) { $vm.load_module('cupid_from_canrest', '', {}); }
+        else $vm.load_module(m.prefix + 'cupid_from_canrest', '', {});
+
+      })
 
     }
     </script>

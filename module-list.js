@@ -2,6 +2,7 @@
     var modules={
         "elig1":         {url:"$H/m/elig1.html"},
         "not_elig1":         {url:"$H/m/not_elig1.html"},
+        "cupid_from_canrest":{url:"$H/m/cupid_from_canrest.html",Table:"cupid-from-canrest"},
         "not_elig2":         {url:"$H/m/not_elig2.html"},
         "not_elig3":         {url:"$H/m/not_elig3.html"},
         "not_elig4":         {url:"$H/m/not_elig4.html"},
@@ -14,6 +15,7 @@
         "recruitment-participate-data": {url:"$H/m/elig-part-questions-data.html",Table:"canrest-recruitment-record"},
         "recruitment-elig-data": {url:"$H/m/elig-all-questions-data.html",Table:"canrest-recruitment-record",form_module:"recruitment-elig-form",task_name:"Eligible"},
         "recruitment-elig-form": {url:"$H/m/elig-all-questions-form.html",Table:"canrest-recruitment-record",task_name:"Eligible"},
+        "cupid-from-canrest-data":{url:"$H/m/cupid-from-canrest-data.html",Table:"cupid-from-canrest",task_name:"For CUPID"},
     }
     for(p in modules){
         $vm.module_list[p]=modules[p];
